@@ -1,0 +1,360 @@
+/*
+Theme Name: Greenjenny
+Author: Seán Stickle
+Description: Minimal theme based on http://lessmade.com/themes/less/
+Version: 0.0.1
+*/
+
+html {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 1rem;
+}
+
+body,
+button,
+input,
+select {
+  padding: 0;
+  margin: 0;
+  background: #ffffff;
+  line-height: 1.4rem;
+  font-size: 1rem;
+}
+
+body {
+  max-width: 650px;
+  position: relative;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+/*
+ *
+ * Typography
+ *
+ *
+ */
+
+/* Headers */
+
+h1, h2, h3, h4, h5, h6 {
+  clear: both;
+}
+
+h1 {
+  font-size: 4.8rem;
+}
+h2 {
+  font-size: 3.6rem;
+}
+
+article h2 {
+  font-size: 1.4rem;
+}
+
+
+h3 {
+  font-size: 2.4rem;
+}
+h4 {
+  font-size: 1.8rem;
+}
+
+hr {
+  background-color: #ccc;
+  border: 0;
+  height: 1px;
+  margin-bottom: 1.5rem;
+}
+
+/* Text elements */
+
+p {
+  margin-bottom: 1.5rem;
+}
+
+ul, ol {
+  margin: 0 0 1.5rem 3rem;
+}
+
+ul ul,
+ol ol,
+ul ol,
+ol ul {
+  margin-bottom: 0;
+  margin-left: 1.5rem;
+}
+
+dt {
+  font-weight: bold;
+}
+dd {
+  margin: 0 1.5em 1.5em;
+}
+
+b, strong {
+  font-weight: bold;
+}
+
+dfn, cite, em, i {
+  font-style: italic;
+}
+
+blockquote {
+  margin: 0 1.5em;
+}
+
+address {
+  margin: 0 0 1.5em;
+}
+
+pre {
+  background: #eee;
+  font-family: courier, monospace;
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+  margin-bottom: 1.6rem;
+  padding: 1.6em;
+  overflow: auto;
+  max-width: 100%;
+}
+
+/* Links */
+
+a {
+  text-decoration: none;
+}
+
+a:hover, a:focus, a:active {
+  text-decoration: underline;
+}
+
+article p a, article li a {
+  color: #CA4739;
+  color: #EA3324;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+
+/*
+ *
+ * Header
+ *
+ */
+
+body > header {
+  padding: 20px 0;
+  margin: 20px auto;
+}
+
+header .avatar {
+  overflow: hidden;
+  width: 100px;
+  height: 100px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  margin: 0;
+  float: right;
+}
+
+header #brand {
+  float: left;
+  width: 80%;
+  margin-top: 22px;
+}
+
+header #brand h1 {
+  font-weight: 800;
+  color: #565656;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+header #brand h1 a {
+  color: #565656;
+  text-decoration: none;
+}
+
+header #brand h1 span {
+  font-weight: 200;
+  color: #888;
+  text-transform: lowercase;
+}
+
+header nav {
+  float: left;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+header nav ul li {
+  float: left;
+  margin: 2px 10px 0 0;
+}
+header nav ul li a {
+  color: #888888;
+  font-size: 14px;
+}
+
+/* 
+ *
+ * Posts/Articles
+ *
+ */
+
+article {
+  padding: 0;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #dddddd;
+}
+
+article header h1 {
+  color: #404040;
+  font-size: 2.4rem;
+  line-height: 2.4rem;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+article header h1 a {
+  text-decoration: none;
+  color: #404040;
+}
+
+article header h1 a:hover {
+  color: #007998;
+}
+
+article header p {
+  font-size: 0.8rem;
+  color: #aaa;
+  margin: -1.5rem 0 2rem 0;
+}
+
+article header p a {
+  color: #888888;
+  text-decoration: none;
+}
+
+article header p a:hover {
+  color: rgba(136, 136, 136, 0.5);
+}
+
+article p {
+  color: #444;
+}
+
+article img {
+  width: 100%;
+  height: auto;
+}
+
+article .meta {
+  line-height: 14.8px;
+  font-size: 10px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: .9px;
+}
+
+article .meta div {
+  float: left;
+}
+
+article .meta .post-categories {
+  list-style: none;
+  margin: 0 0 10px 0;
+}
+
+article .meta .post-categories li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/* Page loop styling */
+
+.page article {
+  border-bottom: none;
+}
+
+.page article .title {
+  margin-bottom: 40px;
+}
+
+footer {
+  text-align: center;
+  padding-bottom: 40px;
+  font-size: 12px;
+}
+
+/* Misc & mixins
+-------------------------------------------------------------- */
+/* Jetpack Gallery */.gallery .gallery-item {
+  margin-top: 0 !important;
+}
+.gallery img {
+  border: none !important;
+}
+.hide-text {
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+}
+.clear {
+  clear: both;
+}
+/* clear floats */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+.clearfix {
+  display: inline-block;
+}
+html[xmlns] .clearfix {
+  display: block;
+}
+* html .clearfix {
+  height: 1%;
+}
+
+
+article img {
+  width: 110%;
+  max-width: 110%;
+  margin: 0 -5%;
+  box-shadow: 1px 1px 5px #aaa;
+}
+
+
+
+
+
+
+/* media queries
+-------------------------------------------------------------- */
+@media (max-width: 767px) {
+  header {
+    padding: 0;
+  }
+  header .avatar {
+    float: none;
+    display: none;
+  }
+  header hgroup {
+    width: 100%;
+  }
+}
+

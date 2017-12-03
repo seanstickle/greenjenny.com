@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<main role="main">
+
+{% for post in site.posts limit:5 %}
+  <article>
+    <header>
+      <h1><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h1>
+      <p>{{ post.date | date: "%B %-d, %Y" }} by Seán Stickle</p>
+    </header>
+    {{ post.content }}
+  </article>
+{% endfor %}
+
+</main>
