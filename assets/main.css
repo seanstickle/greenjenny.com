@@ -148,7 +148,7 @@ body > header {
   margin: 20px auto;
 }
 
-header .avatar {
+header .avatar img {
   overflow: hidden;
   width: 100px;
   height: 100px;
@@ -157,6 +157,8 @@ header .avatar {
   border-radius: 50%;
   margin: 0;
   float: right;
+  padding: 5px;
+  border: 1px solid #eee;
 }
 
 header #brand {
@@ -337,8 +339,6 @@ article img {
   margin: 0 -5%;
   box-shadow: 1px 1px 5px #aaa;
 }
-
-
 
 
 
