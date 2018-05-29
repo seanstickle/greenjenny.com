@@ -65,7 +65,7 @@ p {
 }
 
 ul, ol {
-  margin: 0 0 1.5rem 3rem;
+  margin: 0 0 1.5rem 0;
 }
 
 ul ul,
@@ -105,15 +105,20 @@ pre {
   font-size: 1rem;
   line-height: 1.4rem;
   margin-bottom: 1.6rem;
-  padding: 1.6em;
+  padding: 1em;
   overflow: auto;
   max-width: 100%;
+  border-left: 2px solid #EA3324;
 }
 
 code {
   background: #eee;
   font-family: courier, monospace;
   padding: 5px;
+}
+
+pre code {
+  padding: 0;
 }
 
 /* Links */
