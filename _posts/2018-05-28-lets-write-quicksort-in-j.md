@@ -58,13 +58,13 @@ In J, this is evaluated as:
 
 	  (f y) g (h y)
 
-This is equivalent to operations on functions in mathematics:
+This is equivalent to operations on functions in mathematics, such as:
 
 	  (f + h)(x) = f(x) + h(x)
 	  (f - h)(x) = f(x) - h(x)
 	  (f * h)(x) = f(x) * h(x)
 
-In forks, we just generalize to any operation.
+With forks in J, we generalize from the above (`+`, `-`, and `*`) to any operation in the second position.
 
 As some J verbs (`dyadic` verbs) can take 2 arguments, there is a corresponding version of forks for dyadic verbs:
 
