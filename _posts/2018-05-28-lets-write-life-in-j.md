@@ -162,30 +162,30 @@ It’d be cleaner if we could generate all the rotation combinations. We can do 
 Catalogue takes a `boxed list`, a particular kind of datatype in J. We can create a boxed list by using `;` ([link](http://code.jsoftware.com/wiki/Vocabulary/semi#dyadic)) to create a list of boxed items.
 
       1 0 _1 ; 1 0 _1
-    
-    ┌──────┬──────┐
-    │1 0 _1│1 0 _1│
-    └──────┴──────┘
 
+    +--------+--------+
+    | 1 0 _1 | 1 0 _1 |
+    +--------+--------+
+    
 Then we pass this boxed list to `{` to get the Cartesian product:
 
       { 1 0 _1 ; 1 0 _1
     
-    ┌────┬────┬─────┐
-    │1 1 │1 0 │1 _1 │
-    ├────┼────┼─────┤
-    │0 1 │0 0 │0 _1 │
-    ├────┼────┼─────┤
-    │_1 1│_1 0│_1 _1│
-    └────┴────┴─────┘
+    +-------+-------+-------+
+    |  1  1 |  1  0 |  1 _1 |
+    +-------+-------+-------+
+    |  0  1 |  0  0 |  0 _1 |
+    +-------+-------+-------+
+    | _1  1 | _1  0 | _1 _1 |
+    +-------+-------+-------+
 
 From here, we convert the 2-dimensional boxed list into a 1-dimensional boxed list by using `,` ([ravel](http://code.jsoftware.com/wiki/Vocabulary/comma)):
 
       , { 1 0 _1 ; 1 0 _1
-    
-    ┌───┬───┬────┬───┬───┬────┬────┬────┬─────┐
-    │1 1│1 0│1 _1│0 1│0 0│0 _1│_1 1│_1 0│_1 _1│
-    └───┴───┴────┴───┴───┴────┴────┴────┴─────┘
+
+    +-----+-----+------+-----+-----+------+------+------+-------+
+    | 1 1 | 1 0 | 1 _1 | 0 1 | 0 0 | 0 _1 | _1 1 | _1 0 | _1 _1 |
+    +-----+-----+------+-----+-----+------+------+------+-------+
 
 Finally, we unbox the entire thing, which converts it into the 2-dimensional array we wanted:
 
@@ -205,9 +205,9 @@ We can reduce this further. As we’ve used it, `;` takes two arguments, the lef
 
       ;~ 1 0 _1
     
-    ┌──────┬──────┐
-    │1 0 _1│1 0 _1│
-    └──────┴──────┘
+    +--------+--------+
+    | 1 0 _1 | 1 0 _1 |
+    +--------+--------+
 
 So we can say:
 
