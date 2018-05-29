@@ -26,7 +26,7 @@ For testing purposes, we’ll create an unsorted array of 10 elements, each one 
 
 ## Pick a Pivot
 
-Take `unsorted` and use `{.` to take the first element. That’ll be our pivot:
+Take `unsorted` and use `{.` ([head](http://code.jsoftware.com/wiki/Vocabulary/curlylfdot)) to take the first element. That’ll be our pivot:
 
 	  pivot =: {. unsorted
 	44

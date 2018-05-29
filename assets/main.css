@@ -99,9 +99,12 @@ address {
   margin: 0 0 1.5em;
 }
 
+pre, code {
+  font-family: 'Roboto Mono', monospace;
+}
+  
 pre {
   background: #eee;
-  font-family: courier, monospace;
   font-size: 1rem;
   line-height: 1.4rem;
   margin-bottom: 1.6rem;
@@ -113,7 +116,6 @@ pre {
 
 code {
   background: #eee;
-  font-family: courier, monospace;
   padding: 5px;
 }
 
