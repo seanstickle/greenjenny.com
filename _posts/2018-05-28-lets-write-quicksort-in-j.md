@@ -281,7 +281,7 @@ If you’ve been reading closely, you’ll notice that we stopped putting the na
 
 J allows verbs to be defined [tacitly](http://www.jsoftware.com/help/primer/tacit_definition.htm):
 
-> In a tacit definition the arguments are not named and do not appear explicitly in the definition. The arguments are referred to implicitly by the syntactic requirements of the definition. You have already used several tacit definitions.
+> In a tacit definition the arguments are not named and do not appear explicitly in the definition. The arguments are referred to implicitly by the syntactic requirements of the definition.
 
 J makes extensive use of [tacit programming](https://en.wikipedia.org/wiki/Tacit_programming), allowing the structure of the code to emerge more clearly. That’s a story for another time.
 
