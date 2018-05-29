@@ -22,6 +22,7 @@ If you want to know the detailed version of how it works, consult an algorithms 
 For testing purposes, we’ll create an unsorted array of 10 elements, each one a random integer from 0 to 99. To do this, we’ll use `?` ([roll](http://code.jsoftware.com/wiki/Vocabulary/query)) and pass it a list of 10 `100`s.
 
 	  unsorted =: ? 10 # 100
+
 	44 35 49 67 95 56 50 35 70 83
 
 ## Pick a Pivot
@@ -29,6 +30,7 @@ For testing purposes, we’ll create an unsorted array of 10 elements, each one 
 Take `unsorted` and use `{.` ([head](http://code.jsoftware.com/wiki/Vocabulary/curlylfdot)) to take the first element. That’ll be our pivot:
 
 	  pivot =: {. unsorted
+
 	44
 
 ## Find All the Values Greater Than Pivot
@@ -36,6 +38,7 @@ Take `unsorted` and use `{.` ([head](http://code.jsoftware.com/wiki/Vocabulary/c
 Use `>` ([larger than](http://code.jsoftware.com/wiki/Vocabulary/gt#dyadic)) to compare each element of `unsorted` with the pivot. Those that are larger return true (`1`); those that are smaller return false (`0`).
 
 	  unsorted > pivot
+
 	0 0 1 1 1 1 1 0 1 1
 
 Use `#` ([copy](http://code.jsoftware.com/wiki/Vocabulary/number#dyadic)) to pull a copy of the corresponding elements from `unsorted` where `>` returned true.
