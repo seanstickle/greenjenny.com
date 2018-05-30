@@ -149,7 +149,7 @@ article p a, article li a {
 
 body > header {
   padding: 20px 0;
-  margin: 20px auto;
+  margin: 20px auto 120px auto;
 }
 
 header .avatar img {
